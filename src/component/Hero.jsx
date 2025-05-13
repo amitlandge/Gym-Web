@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import backgroundImage from "../assets/images/slider-bg.jpg";
 import CustomButtom from "../UI/CustomButtom";
-import CustomButtom1 from "../UI/CustomButtom1";
+
 import Navbar from "./Navbar";
 const Hero = () => {
   return (
@@ -40,7 +40,7 @@ const Hero = () => {
           <Typography
             variant="h4"
             sx={{
-              color: "rgb(248,188,26)",
+              color: "var(--primary-color)",
               fontSize: "4rem",
               fontWeight: "100",
             }}
@@ -76,8 +76,33 @@ const Hero = () => {
               gap: "1rem",
             }}
           >
-            <CustomButtom title={"Read More"} />
-            <CustomButtom1 title={"Get A Quote"} />
+            <CustomButtom
+              title={"Read More"}
+              customStyle={{
+                color: "white",
+
+                background: "var(--primary-color)",
+
+                "&:hover": {
+                  background: "transparent",
+                  border: "1px solid white",
+                },
+              }}
+            />
+            <CustomButtom
+              title={"Get A Quote"}
+              customStyle={{
+                color: "black",
+
+                background: "white",
+
+                "&:hover": {
+                  background: "transparent",
+                  border: "1px solid white",
+                  color: "white",
+                },
+              }}
+            />
           </Box>
         </Box>
       </Box>

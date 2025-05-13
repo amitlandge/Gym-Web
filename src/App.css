@@ -6,7 +6,10 @@
   margin: 0;
   padding: 0;
 }
-
+:root {
+  --primary-color: rgb(248, 188, 26);
+  --secondary-color: #261d1d;
+}
 /* 2. Set base font size (1rem = 10px if 62.5%) */
 html {
   font-size: 62.5%; /* 1rem = 10px */
@@ -60,4 +63,10 @@ select {
   background: none;
   border: none;
   outline: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

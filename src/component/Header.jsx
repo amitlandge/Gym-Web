@@ -12,7 +12,7 @@ const style = {
 };
 const iconStyle = {
   fontSize: "2.5rem",
-  color: "rgb(249,194,47)",
+  color: "var(--primary-color)",
 };
 const Header = () => {
   return (
