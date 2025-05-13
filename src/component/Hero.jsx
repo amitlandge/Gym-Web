@@ -1,0 +1,89 @@
+import { Box, Typography } from "@mui/material";
+import backgroundImage from "../assets/images/slider-bg.jpg";
+import CustomButtom from "../UI/CustomButtom";
+import CustomButtom1 from "../UI/CustomButtom1";
+import Navbar from "./Navbar";
+const Hero = () => {
+  return (
+    <Box
+      sx={{
+        position: "relative",
+        top: "0%",
+        left: "0%",
+      }}
+    >
+      <Box
+        sx={{
+          width: "100vw",
+          backgroundImage: `url(${backgroundImage})`,
+          height: "85vh",
+          backgroundOrigin: "center",
+          backgroundSize: "100%",
+          display: "flex",
+        }}
+      >
+        <Box
+          sx={{
+            flex: "0.5%",
+          }}
+        ></Box>
+        <Box
+          sx={{
+            flex: "0.5%",
+            display: "flex",
+            flexDirection: "column",
+            gap: "1rem",
+            justifyContent: "center",
+            alignItems: "flex-start",
+          }}
+        >
+          <Typography
+            variant="h4"
+            sx={{
+              color: "rgb(248,188,26)",
+              fontSize: "4rem",
+              fontWeight: "100",
+            }}
+          >
+            Get Your Body
+          </Typography>
+          <Typography
+            variant="h1"
+            textTransform={"uppercase"}
+            sx={{
+              fontWeight: "600",
+              color: "white",
+            }}
+          >
+            Fitness Here
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{
+              fontSize: "1.6rem",
+              width: "90%",
+              color: "white",
+              fontWeight: "100",
+            }}
+          >
+            Lorem leiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Molestiae, quisquam.
+          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              gap: "1rem",
+            }}
+          >
+            <CustomButtom title={"Read More"} />
+            <CustomButtom1 title={"Get A Quote"} />
+          </Box>
+        </Box>
+      </Box>
+      <Navbar />
+    </Box>
+  );
+};
+
+export default Hero;

@@ -1,0 +1,63 @@
+/* 1. Set box-sizing globally */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Set base font size (1rem = 10px if 62.5%) */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+/* 3. Body styles */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem; /* = 16px */
+  color: #040000;
+  background-color: #ffffff;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Remove default list and anchor styles */
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 5. Images responsive by default */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* 6. Buttons inherit font */
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* 7. Input elements inherit font */
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
