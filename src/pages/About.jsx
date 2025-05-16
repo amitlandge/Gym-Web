@@ -2,6 +2,8 @@ import { Box, Typography } from "@mui/material";
 
 import aboutImage from "../assets/images/about-img.png";
 import CustomButtom from "../UI/CustomButtom";
+import CustomHeadingWrapper from "../wrapper/CustomHeadingWrapper";
+
 const About = () => {
   return (
     <Box
@@ -10,25 +12,14 @@ const About = () => {
         flexDirection: "column",
         textAlign: "center",
         gap: "4rem",
-        margin: "5% auto",
+        margin: "0% auto",
         color: "var(--secondary-color)",
+        background: "#F8F8F8",
+        padding: "5rem",
       }}
     >
-      <Typography
-        variant="h2"
-        sx={{
-          fontFamily: "Dosis , sans-serif",
-          fontWeight: "700",
-          borderBottom: "7px solid var(--primary-color)",
-          borderBottomLeftRadius: "5px",
-          borderBottomRightRadius: "5px",
-          paddingBottom: "1rem",
-          //   borderWidth: "5px",
-        }}
-      >
-        {" "}
-        About G-Max
-      </Typography>
+      {/* <Typography className="pageHeading">About G-Max</Typography> */}
+      <CustomHeadingWrapper>About G-Max</CustomHeadingWrapper>
       <img src={aboutImage} alt="aboutImage" />
       <Typography variant="body" sx={{ width: "70%" }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

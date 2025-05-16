@@ -70,3 +70,24 @@ select {
   justify-content: center;
   align-items: center;
 }
+
+/* sx={{
+          fontFamily: "Dosis , sans-serif",
+          fontWeight: "700",
+          borderBottom: "7px solid var(--primary-color)",
+          borderBottomLeftRadius: "5px",
+          borderBottomRightRadius: "5px",
+          paddingBottom: "1rem",
+          //   borderWidth: "5px",
+        }} */
+
+.pageHeading {
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  border-bottom: 7px solid var(--primary-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-bottom: 1rem;
+}
