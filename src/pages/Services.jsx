@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
+
 import CustomHeadingWrapper from "../wrapper/CustomHeadingWrapper";
 import pic1 from "../assets/images/s-1.jpg";
 import pic2 from "../assets/images/s-2.jpg";
@@ -33,6 +33,7 @@ const imageData = [
     url: pic6,
   },
 ];
+
 const Services = () => {
   return (
     <Box
@@ -61,6 +62,13 @@ const Services = () => {
                   alignItems: "flex-end",
                   padding: "1rem",
                   color: "#fff",
+                  transition: "all 1s ease-in-out",
+                  "&:hover": {
+                    cursor: "pointer",
+                    backgroundImage: `linear-gradient(rgba(248, 188, 26, 0.4), rgba(248, 188, 26, 0.4)), url(${item.url})`,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  },
                 }}
               >
                 <Typography
