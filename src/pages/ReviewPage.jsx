@@ -42,7 +42,7 @@ const ReviewPage = () => {
   };
 
   return (
-    <Box textAlign="center" maxWidth={800} mx="auto" padding={"10rem"}>
+    <Box textAlign="center" padding={"10rem"}>
       <CustomHeadingWrapper>What Says Our Customers</CustomHeadingWrapper>
       <Slider {...settings}>
         {testimonials.map((testimonial, i) => (
