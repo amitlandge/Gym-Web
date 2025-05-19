@@ -91,3 +91,22 @@ select {
   border-top-right-radius: 5px;
   padding-bottom: 1rem;
 }
+.custom-dots {
+  display: flex !important;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.custom-dot {
+  width: 30px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+}
+
+.custom-dots li.slick-active .custom-dot {
+  background-color: #f7b500;
+}

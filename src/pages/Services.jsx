@@ -45,7 +45,9 @@ const Services = () => {
         flexDirection: "column",
       }}
     >
-      <CustomHeadingWrapper>Our Services</CustomHeadingWrapper>
+      <Box>
+        <CustomHeadingWrapper>Our Services</CustomHeadingWrapper>
+      </Box>
       <Grid container spacing={3} alignItems={"stretch"}>
         {imageData.map((item) => {
           return (

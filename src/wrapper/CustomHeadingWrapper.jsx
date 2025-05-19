@@ -1,13 +1,27 @@
-import { ThemeProvider } from "@emotion/react";
+import { Box, Typography } from "@mui/material";
 
-import { customHeadingTheme } from "../style/customHeadingStyle.js";
-import { Typography } from "@mui/material";
-
-const CustomHeadingWrapper = ({ children }) => {
+const CustomHeadingWrapper = ({ children, color }) => {
   return (
-    <ThemeProvider theme={customHeadingTheme}>
-      <Typography variant="h2">{children}</Typography>
-    </ThemeProvider>
+    <Box>
+      <Typography
+        variant="h2"
+        fontWeight="bold"
+        gutterBottom
+        sx={{
+          color: color ? color : "#040000",
+        }}
+      >
+        {children}
+      </Typography>
+      <Box
+        width={50}
+        height={5}
+        bgcolor="var(--primary-color)"
+        mx="auto"
+        borderRadius={5}
+        mb={2}
+      />
+    </Box>
   );
 };
 

@@ -11,7 +11,7 @@ const About = () => {
       sx={{
         flexDirection: "column",
         textAlign: "center",
-        gap: "4rem",
+        gap: "2rem",
         margin: "0% auto",
         color: "var(--secondary-color)",
         background: "#F8F8F8",
@@ -19,7 +19,9 @@ const About = () => {
       }}
     >
       {/* <Typography className="pageHeading">About G-Max</Typography> */}
-      <CustomHeadingWrapper>About G-Max</CustomHeadingWrapper>
+      <Box>
+        <CustomHeadingWrapper>About G-Max</CustomHeadingWrapper>
+      </Box>
       <img src={aboutImage} alt="aboutImage" />
       <Typography variant="body" sx={{ width: "70%" }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
