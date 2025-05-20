@@ -7,51 +7,62 @@ const Section = () => {
   return (
     <Box
       sx={{
-        height: "120vh",
+        color: "white !important",
+        display: "flex",
+        flexWrap: "wrap",
       }}
     >
-      <Grid
-        container
-        height={"60vh !important"}
+      <Box
         sx={{
-          color: "white !important",
+          flex: {
+            xs: "100%",
+            sm: "100%",
+            md: "50%",
+            lg: "50%",
+          },
         }}
       >
-        <Grid item size={6}>
-          <Box height={"100%"}>
-            <img src={imageResult} alt="secImage" />
-          </Box>
-        </Grid>
-        <Grid item size={6} bgcolor={"#3C0E78"}>
-          <Box width={"60%"} padding={"10rem 3rem"}>
-            <CustomHeadingWrapper color={"white"}>
-              BUILT TO BRING BEST RESULTS
-            </CustomHeadingWrapper>
-            <Typography variant="body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit
-            </Typography>
-            <Box>
-              <CustomButtom
-                title={"Get a quote"}
-                customStyle={{
-                  color: "white",
-                  marginTop: "1rem",
-                  background: "var(--primary-color)",
+        <img src={imageResult} height={"100%"} width={"100%"} alt="secImage" />
+      </Box>
 
-                  "&:hover": {
-                    background: "transparent",
-                    border: "1px solid white",
-                  },
-                }}
-              />
-            </Box>
-          </Box>
-        </Grid>
-      </Grid>
+      <Box
+        padding={"10rem 3rem"}
+        sx={{
+          bgcolor: "rgb(60, 14, 120)",
+          flex: {
+            xs: "100%",
+            sm: "100%",
+            md: "50%",
+            lg: "50%",
+          },
+        }}
+      >
+        <CustomHeadingWrapper color={"white"}>
+          BUILT TO BRING BEST RESULTS
+        </CustomHeadingWrapper>
+        <Typography variant="body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit
+        </Typography>
+        <Box>
+          <CustomButtom
+            title={"Get a quote"}
+            customStyle={{
+              color: "white",
+              marginTop: "1rem",
+              background: "var(--primary-color)",
+
+              "&:hover": {
+                background: "transparent",
+                border: "1px solid white",
+              },
+            }}
+          />
+        </Box>
+      </Box>
     </Box>
   );
 };

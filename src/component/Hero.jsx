@@ -16,20 +16,33 @@ const Hero = () => {
         sx={{
           width: "100vw",
           backgroundImage: `url(${backgroundImage})`,
-          height: "85vh",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          height: "auto",
           backgroundOrigin: "center",
-          backgroundSize: "100%",
+          zIndex: "10",
+
           display: "flex",
+          padding: "10rem",
         }}
       >
         <Box
           sx={{
-            flex: "0.5%",
+            flex: "0.5",
+            display: {
+              xs: "none",
+              sm: "none",
+              md: "block",
+              lg: "block",
+            },
           }}
         ></Box>
         <Box
           sx={{
-            flex: "0.5%",
+            flex: {
+              sm: 1,
+              lg: 0.5,
+            },
             display: "flex",
             flexDirection: "column",
             gap: "1rem",
@@ -38,11 +51,11 @@ const Hero = () => {
           }}
         >
           <Typography
-            variant="h4"
+            variant="h6"
             sx={{
               color: "var(--primary-color)",
-              fontSize: "4rem",
-              fontWeight: "100",
+              fontSize: "3rem",
+              fontWeight: "300",
             }}
           >
             Get Your Body
@@ -65,6 +78,7 @@ const Hero = () => {
               color: "white",
               fontWeight: "100",
             }}
+            mb={2}
           >
             Lorem leiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam Lorem ipsum dolor sit amet consectetur

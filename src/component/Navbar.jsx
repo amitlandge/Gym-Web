@@ -1,47 +1,75 @@
-import { Search } from "@mui/icons-material";
-import { Box, ListItem } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  IconButton,
+  Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Box,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const navItems = ["Home", "About", "Services", "Contact"];
+
+const Navbar = ({ isOpen, toggleDrawer }) => {
   return (
-    <Box
-      sx={{
-        position: "absolute",
-        top: "0",
-        margin: "0 auto",
-        background: "rgb(248,188,26)",
-        display: "flex",
-        justifyContent: "flex-start",
-        alignItems: "center",
-        flexWrap: "wrap",
-        width: "100vw",
-      }}
-    >
-      <ListItem
+    <>
+      <Drawer
+        // anchor="left"
+        open={isOpen}
+        onClose={toggleDrawer}
         sx={{
-          display: "flex",
+          zIndex: "10000",
+          width: "100%",
         }}
       >
-        <ListItem>
-          <NavLink>Home</NavLink>
-        </ListItem>
-        <ListItem>
-          <NavLink>About</NavLink>
-        </ListItem>
-        <ListItem>
-          <NavLink>Services</NavLink>
-        </ListItem>
-        <ListItem>
-          <NavLink>Contact Us</NavLink>
-        </ListItem>
-        <ListItem>
-          <NavLink>Login</NavLink>
-        </ListItem>
-        <ListItem>
-          <Search />
-        </ListItem>
-      </ListItem>
-    </Box>
+        <Box
+          width={"100vw"}
+          height={"100vh"}
+          role="presentation"
+          onClick={toggleDrawer}
+          onKeyDown={toggleDrawer}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+
+            alignItems: "center",
+            background: "rgb(60, 14, 120)",
+            color: "white",
+          }}
+        >
+          <List
+            sx={{
+              textAlign: "center",
+              display: "flex",
+              flexDirection: "column",
+              gap: "1rem",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {navItems.map((text) => (
+              <ListItem key={text}>
+                <Link
+                  style={{
+                    fontSize: "3rem",
+                    fontWeight: "600",
+                  }}
+                  to={`/${text.toLowerCase()}`}
+                >
+                  {text}
+                </Link>
+              </ListItem>
+            ))}
+          </List>
+        </Box>
+      </Drawer>
+    </>
   );
 };
 

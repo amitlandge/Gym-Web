@@ -40,7 +40,6 @@ const Services = () => {
       className="flex-center"
       sx={{
         padding: "3rem",
-        gap: "10rem",
         display: "flex",
         flexDirection: "column",
       }}
@@ -48,20 +47,40 @@ const Services = () => {
       <Box>
         <CustomHeadingWrapper>Our Services</CustomHeadingWrapper>
       </Box>
-      <Grid container spacing={3} alignItems={"stretch"}>
-        {imageData.map((item) => {
+      <Box
+        sx={{
+          width: "100vw",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around",
+          alignItems: "center",
+          gap: "2rem",
+          padding: "10rem",
+        }}
+      >
+        {imageData.map((item, index) => {
           return (
-            <Grid size={6} height={"30rem"}>
+            <Box
+              key={index}
+              height={"30rem"}
+              sx={{
+                flex: {
+                  xs: "90%",
+                  sm: "80%",
+                  md: "45%",
+                  lg: "45%",
+                },
+              }}
+            >
               <Box
                 sx={{
-                  width: "100%",
-                  height: "100%",
                   backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${item.url})`,
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                   display: "flex",
                   alignItems: "flex-end",
+                  height: "100%",
                   padding: "1rem",
                   color: "#fff",
                   transition: "all 1s ease-in-out",
@@ -85,10 +104,10 @@ const Services = () => {
                   {item.name}
                 </Typography>
               </Box>
-            </Grid>
+            </Box>
           );
         })}
-      </Grid>
+      </Box>
     </Box>
   );
 };

@@ -71,16 +71,6 @@ select {
   align-items: center;
 }
 
-/* sx={{
-          fontFamily: "Dosis , sans-serif",
-          fontWeight: "700",
-          borderBottom: "7px solid var(--primary-color)",
-          borderBottomLeftRadius: "5px",
-          borderBottomRightRadius: "5px",
-          paddingBottom: "1rem",
-          //   borderWidth: "5px",
-        }} */
-
 .pageHeading {
   font-family: "Dosis", sans-serif;
   font-weight: 700;

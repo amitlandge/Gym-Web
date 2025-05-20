@@ -9,6 +9,7 @@ const CustomHeadingWrapper = ({ children, color }) => {
         gutterBottom
         sx={{
           color: color ? color : "#040000",
+          textAlign: "center",
         }}
       >
         {children}

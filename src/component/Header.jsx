@@ -4,8 +4,10 @@ import LogoImage from "../assets/images/logo.png";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
+import { Menu } from "@mui/icons-material";
 const style = {
   display: "flex",
+  flex: "15%",
   gap: "1rem",
   justifyContent: "center",
   alignItems: "center",
@@ -18,11 +20,15 @@ const Header = () => {
   return (
     <Box
       sx={{
+        width: "100vw",
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-around",
-        alignContent: "center",
+        flexWrap: "wrap",
+        // justifyContent: "",
+        // alignItems: "center",
         padding: "1rem",
+        position: "relative",
+        top: "0",
       }}
     >
       <ListItem sx={{ ...style }}>
