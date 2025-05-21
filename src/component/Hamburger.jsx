@@ -1,6 +1,5 @@
 import { Menu } from "@mui/icons-material";
 import { Box, IconButton } from "@mui/material";
-import React, { useState } from "react";
 
 const Hamburger = ({ onOpenDrawerHandler }) => {
   return (

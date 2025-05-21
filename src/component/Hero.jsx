@@ -23,6 +23,12 @@ const Hero = () => {
           zIndex: "10",
 
           display: "flex",
+          flexDirection: {
+            xs: "column",
+            sm: "column",
+            md: "row",
+            lg: "row",
+          },
           padding: "10rem",
         }}
       >

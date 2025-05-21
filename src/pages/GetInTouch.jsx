@@ -7,7 +7,10 @@ const GetInTouch = () => {
   return (
     <Box
       sx={{
-        width: "80%",
+        width: {
+          sm: "95%",
+          lg: "80%",
+        },
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",

@@ -62,9 +62,9 @@ export default function Footer() {
       </Box>
 
       {/* Footer Links Section */}
-      <Grid container spacing={4} px={{ xs: 4, md: 10 }} py={6}>
+      <Box px={{ xs: 4, md: 10 }} py={6}>
         {/* About */}
-        <Grid item xs={3} sm={3} md={3}>
+        <Box md={3}>
           <Typography variant="h4" fontWeight="bold" gutterBottom>
             About G-Max
           </Typography>
@@ -73,71 +73,84 @@ export default function Footer() {
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation u
           </Typography>
-        </Grid>
+        </Box>
 
         {/* Menus */}
-        <Grid item size={4}>
-          <Typography variant="h4" fontWeight="bold" gutterBottom>
-            Menus
-          </Typography>
-          <Typography variant="h5">Home</Typography>
-          <Typography variant="h5">About</Typography>
-          <Typography variant="h5">Services</Typography>
-          <Typography variant="h5">Contact Us</Typography>
-          <Typography variant="h5">Login</Typography>
-        </Grid>
-
-        {/* Useful Links */}
-        <Grid item size={4}>
-          <Typography variant="h4" fontWeight="bold" gutterBottom>
-            Useful Links
-          </Typography>
-          <Typography variant="h5">Adipiscing</Typography>
-          <Typography variant="h5">Elit, sed</Typography>
-          <Typography variant="h5">do Eiusmod</Typography>
-          <Typography variant="h5">Tempor</Typography>
-          <Typography variant="h5">incididunt</Typography>
-        </Grid>
-
-        {/* Contact Us */}
-        <Grid item size={4}>
-          <Typography variant="h4" fontWeight="bold" gutterBottom>
-            Contact Us
-          </Typography>
-          <Box display="flex" alignItems="center" mb={1}>
-            <LocationOn sx={{ mr: 1 }} />
-            <Typography variant="h5">No.123, loram ipsum</Typography>
-          </Box>
-          <Box display="flex" alignItems="center" mb={1}>
-            <Phone sx={{ mr: 1 }} />
-            <Typography variant="h5">+01 12345678901</Typography>
-          </Box>
-          <Box display="flex" alignItems="center" mb={2}>
-            <Email sx={{ mr: 1 }} />
-            <Typography variant="h5">demo123@gmail.com</Typography>
-          </Box>
-          {/* Social Icons */}
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            marginTop: "2rem",
+            gap: "2rem",
+            "@media (max-width: 600px)": {
+              flexDirection: "column", // for screens smaller than 1200px
+            },
+          }}
+        >
           <Box>
-            <IconButton sx={{ color: "white" }}>
-              <Facebook />
-            </IconButton>
-            <IconButton sx={{ color: "white" }}>
-              <Twitter />
-            </IconButton>
-            <IconButton sx={{ color: "white" }}>
-              <LinkedIn />
-            </IconButton>
-            <IconButton sx={{ color: "white" }}>
-              <Instagram />
-            </IconButton>
+            <Typography variant="h4" fontWeight="bold" gutterBottom>
+              Menus
+            </Typography>
+            <Typography variant="h5">Home</Typography>
+            <Typography variant="h5">About</Typography>
+            <Typography variant="h5">Services</Typography>
+            <Typography variant="h5">Contact Us</Typography>
+            <Typography variant="h5">Login</Typography>
           </Box>
-        </Grid>
-      </Grid>
+
+          {/* Useful Links */}
+          <Box>
+            <Typography variant="h4" fontWeight="bold" gutterBottom>
+              Useful Links
+            </Typography>
+            <Typography variant="h5">Adipiscing</Typography>
+            <Typography variant="h5">Elit, sed</Typography>
+            <Typography variant="h5">do Eiusmod</Typography>
+            <Typography variant="h5">Tempor</Typography>
+            <Typography variant="h5">incididunt</Typography>
+          </Box>
+
+          {/* Contact Us */}
+          <Box>
+            <Typography variant="h4" fontWeight="bold" gutterBottom>
+              Contact Us
+            </Typography>
+            <Box display="flex" alignItems="center" mb={1}>
+              <LocationOn sx={{ mr: 1 }} />
+              <Typography variant="h5">No.123, loram ipsum</Typography>
+            </Box>
+            <Box display="flex" alignItems="center" mb={1}>
+              <Phone sx={{ mr: 1 }} />
+              <Typography variant="h5">+01 12345678901</Typography>
+            </Box>
+            <Box display="flex" alignItems="center" mb={2}>
+              <Email sx={{ mr: 1 }} />
+              <Typography variant="h5">demo123@gmail.com</Typography>
+            </Box>
+            {/* Social Icons */}
+            <Box>
+              <IconButton sx={{ color: "white" }}>
+                <Facebook />
+              </IconButton>
+              <IconButton sx={{ color: "white" }}>
+                <Twitter />
+              </IconButton>
+              <IconButton sx={{ color: "white" }}>
+                <LinkedIn />
+              </IconButton>
+              <IconButton sx={{ color: "white" }}>
+                <Instagram />
+              </IconButton>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
 
       {/* Bottom Footer */}
       <Box textAlign="center" py={2} sx={{ backgroundColor: "#0d0d0d" }}>
         <Typography variant="body">
-          © 2019 All Rights Reserved. Design by Free Html Templates
+          © 2025 All Rights Reserved. Design by Amit
         </Typography>
       </Box>
     </Box>

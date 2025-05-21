@@ -22,10 +22,11 @@ const Header = () => {
       sx={{
         width: "100vw",
         display: "flex",
-        flexDirection: "row",
+        "@media (max-width: 600px)": {
+          flexDirection: "column",
+        },
         flexWrap: "wrap",
-        // justifyContent: "",
-        // alignItems: "center",
+
         padding: "1rem",
         position: "relative",
         top: "0",

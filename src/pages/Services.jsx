@@ -55,7 +55,10 @@ const Services = () => {
           justifyContent: "space-around",
           alignItems: "center",
           gap: "2rem",
-          padding: "10rem",
+          padding: {
+            sm: "5rem",
+            lg: "10rem",
+          },
         }}
       >
         {imageData.map((item, index) => {
@@ -66,7 +69,7 @@ const Services = () => {
               sx={{
                 flex: {
                   xs: "90%",
-                  sm: "80%",
+                  sm: "90%",
                   md: "45%",
                   lg: "45%",
                 },

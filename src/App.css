@@ -15,7 +15,16 @@ html {
   font-size: 62.5%; /* 1rem = 10px */
   scroll-behavior: smooth;
 }
-
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 42%;
+  }
+}
 /* 3. Body styles */
 body {
   font-family: "Poppins", sans-serif;
@@ -25,6 +34,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* 4. Remove default list and anchor styles */
