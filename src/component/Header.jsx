@@ -1,6 +1,6 @@
 import { Box, ListItem, Typography } from "@mui/material";
 
-import LogoImage from "../assets/images/logo.png";
+import LogoImage from "../assets/images/gmax.png";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
@@ -33,15 +33,7 @@ const Header = () => {
       }}
     >
       <ListItem sx={{ ...style }}>
-        <img src={LogoImage} alt="logo" />
-        <Typography
-          variant="h4"
-          sx={{
-            fontWeight: "600",
-          }}
-        >
-          G-MAX
-        </Typography>
+        <img src={LogoImage} alt="logo" width={"70rem"} />
       </ListItem>
       <ListItem sx={{ ...style }}>
         <LocationOnIcon style={{ ...iconStyle }} />

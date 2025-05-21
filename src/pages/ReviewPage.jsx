@@ -12,19 +12,19 @@ const testimonials = [
     name: "John",
     image: pic1,
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+      "Joining G-Max was the best decision I made this year! The trainers are incredibly supportive, and I’ve seen amazing results in just a few months",
   },
   {
     name: "Ved",
     image: pic2,
     message:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      "I love the clean, motivating atmosphere here. The equipment is top-notch, and the staff genuinely care about your fitness journey. Highly recommend!.",
   },
   {
     name: "Amit",
     image: pic3,
     message:
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
+      "G-Max isn’t just a gym—it’s a second home. The people, the vibes, the energy—it all pushes you to be your best every single day.",
   },
 ];
 

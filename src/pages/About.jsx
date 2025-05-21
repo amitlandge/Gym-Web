@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 
-import aboutImage from "../assets/images/about-img.png";
+import aboutImage from "../assets/images/gmax.png";
 import CustomButtom from "../UI/CustomButtom";
 import CustomHeadingWrapper from "../wrapper/CustomHeadingWrapper";
 
@@ -22,11 +22,11 @@ const About = () => {
       <Box>
         <CustomHeadingWrapper>About G-Max</CustomHeadingWrapper>
       </Box>
-      <img src={aboutImage} alt="aboutImage" />
+      <img src={aboutImage} alt="aboutImage" width={"30%"} />
       <Typography variant="body" sx={{ width: "70%" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis
+        Redefine your boundaries with G-Max. Whether you’re a beginner or a pro,
+        our expert trainers, cutting-edge equipment, and motivating environment
+        help you chase greatness daily
       </Typography>
       <CustomButtom
         title={"Read More"}

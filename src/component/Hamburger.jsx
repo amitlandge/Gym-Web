@@ -6,7 +6,7 @@ const Hamburger = ({ onOpenDrawerHandler }) => {
     <Box
       sx={{
         position: "fixed",
-        top: "10rem",
+        top: "12rem",
         left: "5rem",
         zIndex: "9000",
       }}

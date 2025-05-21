@@ -19,6 +19,9 @@ html {
   html {
     font-size: 50%;
   }
+  .navImage {
+    width: 35%;
+  }
 }
 @media screen and (max-width: 450px) {
   html {

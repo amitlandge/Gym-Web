@@ -86,9 +86,9 @@ const Hero = () => {
             }}
             mb={2}
           >
-            Lorem leiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Molestiae, quisquam.
+            Welcome to G-Max — a fitness sanctuary where passion meets progress.
+            Train with purpose, push your limits, and become the strongest
+            version of yourself, inside and out.
           </Typography>
           <Box
             sx={{
