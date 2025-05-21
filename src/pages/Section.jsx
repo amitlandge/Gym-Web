@@ -35,6 +35,7 @@ const Section = () => {
             md: "50%",
             lg: "50%",
           },
+          textAlign: "center",
         }}
       >
         <CustomHeadingWrapper color={"white"}>
